@@ -25,12 +25,12 @@ struct MaterialNaoReciclavel {
     let iconeN: String
     let materialN: String
     let textoN: String
-    
 }
+
 let materialNaoReciclavelTexto: [MaterialNaoReciclavel] = [
-    MaterialNaoReciclavel(iconeN: "⚠️", materialN: "Resíduos perigosos", textoN: "Não reciclavel: pilhas, baterias, lampadas fluorescentes, pneus inservíveis, Embalagens de Agrotóxicos."),
-    MaterialNaoReciclavel(iconeN: "🚑", materialN: "Resíduos ambulatorios e de serviços de saúde", textoN: "Não reciclavel: seringas, ataduras, agulhas, algodão, gazes."),
-    MaterialNaoReciclavel(iconeN: "🍃", materialN: "Resíduos orgânicos", textoN: "Não reciclavel: cascas de legumes, folhas, restos de comida, frutas, cascas de ovos."),
+    MaterialNaoReciclavel(iconeN: "⚠️", materialN: "Resíduos perigosos", textoN: "Não reciclável: pilhas, baterias, lâmpadas fluorescentes, pneus inservíveis, embalagens de agrotóxicos."),
+    MaterialNaoReciclavel(iconeN: "🚑", materialN: "Resíduos ambulatórios e de serviços de saúde", textoN: "Não reciclável: seringas, ataduras, agulhas, algodão, gazes."),
+    MaterialNaoReciclavel(iconeN: "🍃", materialN: "Resíduos orgânicos", textoN: "Não reciclável: cascas de legumes, folhas, restos de comida, frutas, cascas de ovos."),
 ]
 
 
@@ -51,7 +51,7 @@ func corDaLixeira(_ material: String) -> String {
         return "Lixeira preta"
     case "Resíduos perigosos":
         return "Lixeira laranja"
-    case "Resíduos ambulatorios e de serviços de saúde":
+    case "Resíduos ambulatórios e de serviços de saúde":
         return "Lixeira branca"
     case "Resíduos orgânicos":
         return "Lixeira marrom"
@@ -59,4 +59,3 @@ func corDaLixeira(_ material: String) -> String {
         return ""
     }
 }
-
