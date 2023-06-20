@@ -34,7 +34,7 @@ struct ContentView: View {
                 List {
                     Section {
                         ForEach(materialReciclavelTexto, id:\.material) {materialReciclavel in
-                            NavigationLink(destination: Text(materialReciclavel.texto)) {
+                            NavigationLink(destination: Text(materialReciclavel.texto).padding(25)) {
                                 Text(materialReciclavel.icone)
                                 VStack(alignment: .leading){
                                     Text(materialReciclavel.material)
@@ -55,7 +55,7 @@ struct ContentView: View {
                     
                     Section {
                         ForEach(materialNaoReciclavelTexto, id: \.materialN) {materialNaoReciclavel in
-                            NavigationLink(destination: Text(materialNaoReciclavel.textoN)) {
+                            NavigationLink(destination: Text(materialNaoReciclavel.textoN).padding(25)) {
                                 Text(materialNaoReciclavel.iconeN)
                                 VStack(alignment: .leading) {
                                     Text(materialNaoReciclavel.materialN)
