@@ -38,7 +38,7 @@ let materialNaoReciclavelTexto: [MaterialNaoReciclavel] = [
 
 func corDaLixeira(_ material: String) -> String {
     switch material {
-    case "Papel e Papelão":
+    case "Papel/Papelão":
         return "Lixeira azul"
     case "Plástico":
         return "Lixeira vermelha"
